@@ -7,16 +7,19 @@ public class EcoTrigger : MonoBehaviour
 {
     [SerializeField] float speed;
 
-    
+    private Slider m_Slider;
     void Start()
     {
-        
+        m_Slider = GetComponent<Slider>();
     }
-
     
+
     void Update()
     {
-       GetComponent<Slider>().value -= Time.deltaTime * speed;
-       
+       m_Slider.value -= Time.deltaTime * speed;
+       if(m_Slider.value == 0)
+       {
+
+       }
     }
 }
