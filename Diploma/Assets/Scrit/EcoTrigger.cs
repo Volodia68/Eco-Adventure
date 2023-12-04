@@ -22,4 +22,8 @@ public class EcoTrigger : MonoBehaviour
 
        }
     }
+    public void GetPowerEcoPoint(float value)
+    {
+        m_Slider.value += value;
+    }
 }

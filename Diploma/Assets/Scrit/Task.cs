@@ -4,15 +4,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Task : MonoBehaviour
 {
     [SerializeField] float speed;
+    [SerializeField] float pointsByTask;
     [SerializeField] GameObject menu;
     [SerializeField] GameObject exit;
+    [SerializeField] EcoTrigger ecoSlider;
     private void AddEcolog()
     {
         if (m_Slider.value == m_Slider.maxValue)
         {
+            ecoSlider.GetPowerEcoPoint(pointsByTask);
             menu.SetActive(true);
             exit.SetActive(false);
         }
