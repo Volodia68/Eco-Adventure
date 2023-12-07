@@ -8,9 +8,10 @@ public class Sleepinessscale : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float pointsBySleeping;
+    [SerializeField] GameObject Sleeping;
 
     private Slider m_Slider;
-    void Start()
+    void Awake()
     {
         m_Slider = GetComponent<Slider>();
 
@@ -23,9 +24,11 @@ public class Sleepinessscale : MonoBehaviour
     void Update()
     {
         m_Slider.value -= Time.deltaTime * speed;
+        
     }
     public void Plusloding(float count)
     {
         m_Slider.value += count;
+
     }
 }
