@@ -1,0 +1,470 @@
+fileFormatVersion: 2
+guid: 48cc1b5c9afc5f647b60b28d30813e7b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 32, y: 670, z: 837, w: 47}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: create-a-game-character-sprite-resembling-a-male-student-552571504_0
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 673.3334
+        width: 152.6
+        height: 303.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84e543654a833b49926ade11f664862
+      internalID: -215268016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: create-a-game-character-sprite-resembling-a-male-student-552571504_1
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 673.3334
+        width: 152.6
+        height: 303.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4462199caae47f641b1f4ea3fd380f8c
+      internalID: -358418220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: create-a-game-character-sprite-resembling-a-male-student-552571504_2
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 673.3334
+        width: 152.6
+        height: 303.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12e24458e7cd474e95a7770ec4b1d5a
+      internalID: -78454618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: create-a-game-character-sprite-resembling-a-male-student-552571504_3
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 673.3334
+        width: 152.6
+        height: 303.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0892d778b01b4b549bf1f87fc6c15db3
+      internalID: 492166610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: create-a-game-character-sprite-resembling-a-male-student-552571504_4
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 673.3334
+        width: 152.6
+        height: 303.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6454e94928fecf348b6aed4b9615472e
+      internalID: 1304422589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: create-a-game-character-sprite-resembling-a-male-student-552571504_5
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 348.33334
+        width: 152.6
+        height: 303.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8719888dc6fd094ea02d4bd3e79a4aa
+      internalID: -246547340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: create-a-game-character-sprite-resembling-a-male-student-552571504_6
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 348.33334
+        width: 152.6
+        height: 303.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9081c150f3bc5429f4b6f0e957030a
+      internalID: 601692074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: create-a-game-character-sprite-resembling-a-male-student-552571504_7
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 348.33334
+        width: 152.6
+        height: 303.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90355d2bf28eca940bd27fc3050fdaa6
+      internalID: -1342229910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: create-a-game-character-sprite-resembling-a-male-student-552571504_8
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 348.33334
+        width: 152.6
+        height: 303.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d672f2e871b2aeb4d82af9215fcca9f0
+      internalID: 953124090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: create-a-game-character-sprite-resembling-a-male-student-552571504_9
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 348.33334
+        width: 152.6
+        height: 303.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d4f7d9cddd0b04abd971136920aac9
+      internalID: 1674350430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: create-a-game-character-sprite-resembling-a-male-student-552571504_10
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 23.333344
+        width: 152.6
+        height: 303.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90777aa2050ef244bb6f810d4bc09bce
+      internalID: 2716710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: create-a-game-character-sprite-resembling-a-male-student-552571504_11
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 23.333344
+        width: 152.6
+        height: 303.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc26964e66a73cd4d97f7162dc09f3f8
+      internalID: 198090251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: create-a-game-character-sprite-resembling-a-male-student-552571504_12
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 23.333344
+        width: 152.6
+        height: 303.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981445e5af7aab2478fed457fdd064b7
+      internalID: 1690980523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: create-a-game-character-sprite-resembling-a-male-student-552571504_13
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 23.333344
+        width: 152.6
+        height: 303.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0853aac0903b9014e87ab2b129991cd5
+      internalID: 1946005933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: create-a-game-character-sprite-resembling-a-male-student-552571504_14
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 23.333344
+        width: 152.6
+        height: 303.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4a5af1c101af8418529148551a63bb
+      internalID: 1420488782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      create-a-game-character-sprite-resembling-a-male-student-552571504_0: -215268016
+      create-a-game-character-sprite-resembling-a-male-student-552571504_1: -358418220
+      create-a-game-character-sprite-resembling-a-male-student-552571504_10: 2716710
+      create-a-game-character-sprite-resembling-a-male-student-552571504_11: 198090251
+      create-a-game-character-sprite-resembling-a-male-student-552571504_12: 1690980523
+      create-a-game-character-sprite-resembling-a-male-student-552571504_13: 1946005933
+      create-a-game-character-sprite-resembling-a-male-student-552571504_14: 1420488782
+      create-a-game-character-sprite-resembling-a-male-student-552571504_2: -78454618
+      create-a-game-character-sprite-resembling-a-male-student-552571504_3: 492166610
+      create-a-game-character-sprite-resembling-a-male-student-552571504_4: 1304422589
+      create-a-game-character-sprite-resembling-a-male-student-552571504_5: -246547340
+      create-a-game-character-sprite-resembling-a-male-student-552571504_6: 601692074
+      create-a-game-character-sprite-resembling-a-male-student-552571504_7: -1342229910
+      create-a-game-character-sprite-resembling-a-male-student-552571504_8: 953124090
+      create-a-game-character-sprite-resembling-a-male-student-552571504_9: 1674350430
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
