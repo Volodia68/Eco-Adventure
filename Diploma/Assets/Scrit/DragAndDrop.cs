@@ -6,6 +6,14 @@ using UnityEngine.EventSystems;
 
 public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
+    [SerializeField] private Color ColorDrag;
+    public string slotName;
+    public bool Draggable = true;
+    public Vector2 lastPosition;
+    public Vector2 firstPosition;
+
+    private Color ColorMain;
+
     private RectTransform m_RectTransform;
     private Image image;
 
@@ -13,23 +21,25 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
     {
         m_RectTransform = GetComponent<RectTransform>();
         image = GetComponent<Image>();
+        ColorMain = image.color;
+
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        image.color = new Color(0f, 255f, 200f, 0.7f);
+        image.color = ColorDrag;
         image.raycastTarget = false;
-
+        lastPosition = GetComponent<RectTransform>().anchoredPosition;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        m_RectTransform.anchoredPosition += eventData.delta;        
+        m_RectTransform.anchoredPosition += eventData.delta;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        image.color = new Color(255f, 255f, 255f, 1f);
-        image.raycastTarget = true;
+        image.color = ColorMain;
+        image.raycastTarget = Draggable;
     }
 }
