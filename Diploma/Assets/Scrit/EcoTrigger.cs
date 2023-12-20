@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class EcoTrigger : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] Slider ExpSlider;
     [SerializeField] float GainExp;
+    [SerializeField] GameObject lose;
 
     private Slider m_Slider;
     void Start()
@@ -27,7 +29,7 @@ public class EcoTrigger : MonoBehaviour
        }
        else if (m_Slider.value == 0)
        {
-
+            lose.SetActive(true);
        }
     }
     public void GetPowerEcoPoint(float value)
