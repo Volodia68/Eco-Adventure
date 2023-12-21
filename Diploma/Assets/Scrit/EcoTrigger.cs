@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
+using static System.Net.Mime.MediaTypeNames;
+
 
 public class EcoTrigger : MonoBehaviour
 {
@@ -11,6 +14,7 @@ public class EcoTrigger : MonoBehaviour
     [SerializeField] Slider ExpSlider;
     [SerializeField] float GainExp;
     [SerializeField] GameObject lose;
+    [SerializeField] private FarmMoney score;
 
     private Slider m_Slider;
     void Start()
@@ -26,6 +30,9 @@ public class EcoTrigger : MonoBehaviour
        if (m_Slider.value > 0)
        {
             ExpSlider.value += GainExp;
+            score.ScoreMoney++;
+
+
        }
        else if (m_Slider.value == 0)
        {

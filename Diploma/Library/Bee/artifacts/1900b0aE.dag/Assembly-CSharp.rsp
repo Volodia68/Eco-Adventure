@@ -358,6 +358,7 @@
 "Assets/Scrit/DragObjectHandler.cs"
 "Assets/Scrit/EcoTrigger.cs"
 "Assets/Scrit/ExFarm.cs"
+"Assets/Scrit/FarmMoney.cs"
 "Assets/Scrit/HungeScore.cs"
 "Assets/Scrit/Obgect.cs"
 "Assets/Scrit/SceneGange.cs"
