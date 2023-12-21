@@ -1147,7 +1147,8 @@ MonoBehaviour:
   ExpSlider: {fileID: 1091269229}
   GainExp: 0.00002
   lose: {fileID: 680244195}
-  score: {fileID: 2136588888}
+  Money: {fileID: 0}
+  GainMoney: 0
 --- !u!114 &261011838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1498,10 +1499,6 @@ RectTransform:
   - {fileID: 1629741238}
   - {fileID: 576595396}
   - {fileID: 898452240}
-  - {fileID: 1091269228}
-  - {fileID: 1232534416}
-  - {fileID: 363339374}
-  - {fileID: 2136588887}
   m_Father: {fileID: 2138822483}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1842,7 +1839,7 @@ RectTransform:
   - {fileID: 1624766448}
   - {fileID: 668864309}
   - {fileID: 1354108814}
-  m_Father: {fileID: 292304781}
+  m_Father: {fileID: 1295011174}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2199,7 +2196,11 @@ MonoBehaviour:
   text: {fileID: 494086448}
   menu: {fileID: 1260478672}
   exit: {fileID: 926599769}
+  pointsByTask: 0.02
   ecoSlider: {fileID: 261011837}
+  Money: {fileID: 2136588888}
+  GainMoney: 1
+  Ui: {fileID: 1295011173}
   Scorecount: 0
 --- !u!114 &494086448
 MonoBehaviour:
@@ -4582,6 +4583,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1295011173}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &998363216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4763,7 +4776,7 @@ RectTransform:
   m_Children:
   - {fileID: 1300861018}
   - {fileID: 794481683}
-  m_Father: {fileID: 292304781}
+  m_Father: {fileID: 1295011174}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5465,7 +5478,7 @@ RectTransform:
   m_Children:
   - {fileID: 284173039}
   - {fileID: 299382361}
-  m_Father: {fileID: 292304781}
+  m_Father: {fileID: 1295011174}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5769,6 +5782,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260478672}
   m_CullTransparentMesh: 1
+--- !u!1 &1295011173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1295011174}
+  - component: {fileID: 1295011176}
+  - component: {fileID: 1295011175}
+  m_Layer: 5
+  m_Name: UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1295011174
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295011173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2136588887}
+  - {fileID: 363339374}
+  - {fileID: 1232534416}
+  - {fileID: 1091269228}
+  m_Father: {fileID: 2138822483}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1295011175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295011173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1295011176
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295011173}
+  m_CullTransparentMesh: 1
 --- !u!1 &1300861017
 GameObject:
   m_ObjectHideFlags: 0
@@ -5880,7 +5972,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 42.917, y: -49}
+  m_AnchoredPosition: {x: 42.917, y: -47}
   m_SizeDelta: {x: 477.345, y: 120.493}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1312838690
@@ -5947,10 +6039,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.075
-  pointsByTask: 0.002
+  pointsByTask: 0.02
   menu: {fileID: 1260478672}
   exit: {fileID: 2029640907}
   ecoSlider: {fileID: 1703547134}
+  Ui: {fileID: 1295011173}
 --- !u!1 &1318890247
 GameObject:
   m_ObjectHideFlags: 0
@@ -6058,6 +6151,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 292304778}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1295011173}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -7331,7 +7436,7 @@ RectTransform:
   m_Father: {fileID: 794481683}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7479,7 +7584,8 @@ MonoBehaviour:
   ExpSlider: {fileID: 1091269229}
   GainExp: 0.0002
   lose: {fileID: 680244195}
-  score: {fileID: 2136588888}
+  Money: {fileID: 0}
+  GainMoney: 0
 --- !u!1 &1705400230
 GameObject:
   m_ObjectHideFlags: 0
@@ -8687,7 +8793,8 @@ MonoBehaviour:
   ExpSlider: {fileID: 1091269229}
   GainExp: 0.00002
   lose: {fileID: 680244195}
-  score: {fileID: 2136588888}
+  Money: {fileID: 0}
+  GainMoney: 1
 --- !u!1 &1962390919
 GameObject:
   m_ObjectHideFlags: 0
@@ -8721,7 +8828,7 @@ RectTransform:
   m_Father: {fileID: 1354108814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8874,7 +8981,7 @@ RectTransform:
   m_Father: {fileID: 299382361}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -2.5, y: 0}
   m_SizeDelta: {x: 5.0001, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9364,12 +9471,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136588886}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 292304781}
+  m_Father: {fileID: 1295011174}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9389,7 +9496,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 2136588889}
-  ScoreMoney: 0
 --- !u!114 &2136588889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9591,6 +9697,7 @@ RectTransform:
   - {fileID: 395141587}
   - {fileID: 680244196}
   - {fileID: 1438228536}
+  - {fileID: 1295011174}
   - {fileID: 1815562884}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

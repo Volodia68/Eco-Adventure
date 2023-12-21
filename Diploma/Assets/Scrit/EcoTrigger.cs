@@ -12,9 +12,11 @@ public class EcoTrigger : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] Slider ExpSlider;
-    [SerializeField] float GainExp;
+    [SerializeField] float GainExp; 
     [SerializeField] GameObject lose;
-    [SerializeField] private FarmMoney score;
+    [SerializeField] private FarmMoney Money;
+    [SerializeField] int GainMoney;
+
 
     private Slider m_Slider;
     void Start()
@@ -30,7 +32,7 @@ public class EcoTrigger : MonoBehaviour
        if (m_Slider.value > 0)
        {
             ExpSlider.value += GainExp;
-            score.ScoreMoney++;
+            
 
 
        }

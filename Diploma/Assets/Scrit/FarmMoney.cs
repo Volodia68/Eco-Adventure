@@ -6,7 +6,13 @@ using UnityEngine.UI;
 
 public class FarmMoney : MonoBehaviour
 {
+
     [SerializeField] TextMeshProUGUI text;
-    public int ScoreMoney;
+    private int ScoreMoney;
+    public void AddMoney(int value)
+    {
+        ScoreMoney += value;
+        text.text = ScoreMoney.ToString();
+    }
     
 }

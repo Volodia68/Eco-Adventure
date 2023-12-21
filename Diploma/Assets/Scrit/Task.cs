@@ -11,17 +11,21 @@ public class Task : MonoBehaviour
     [SerializeField] GameObject menu;
     [SerializeField] GameObject exit;
     [SerializeField] EcoTrigger ecoSlider;
+    [SerializeField] GameObject Ui;
+
+    private Slider m_Slider;
     private void AddEcolog()
     {
         if (m_Slider.value == m_Slider.maxValue)
         {
             ecoSlider.GetPowerEcoPoint(pointsByTask);
+            Ui.SetActive(true);
             menu.SetActive(true);
             exit.SetActive(false);
         }
     }
-    private Slider m_Slider;
-    void Start()
+    
+    void Awake()
     {
         m_Slider = GetComponent<Slider>();
         m_Slider.onValueChanged.AddListener(delegate { AddEcolog(); });
