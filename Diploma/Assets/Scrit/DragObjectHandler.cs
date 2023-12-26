@@ -7,6 +7,7 @@ public class DragObjectHandler : MonoBehaviour
 {
     [SerializeField] float pointsByTask;
     [SerializeField] GameObject menu;
+    [SerializeField] GameObject UI;
     [SerializeField] GameObject exit;
     [SerializeField] EcoTrigger ecoSlider;
     [SerializeField] private DragAndDrop[] dragable;
@@ -28,6 +29,7 @@ public class DragObjectHandler : MonoBehaviour
             ecoSlider.GetPowerEcoPoint(pointsByTask);
             menu.SetActive(true);
             exit.SetActive(false);
+            UI.SetActive(true);
         }
     }
 

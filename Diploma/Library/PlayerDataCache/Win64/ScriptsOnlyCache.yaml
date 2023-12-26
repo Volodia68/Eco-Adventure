@@ -1,10 +1,17 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - DragAndDrop
+    - DragObjectHandler
     - EcoTrigger
+    - ExFarm
+    - FarmMoney
+    - HungeScore
     - Obgect
+    - SceneGange
     - Score
     - Sleepinessscale
+    - Slot
     - Task
     - darkening
     Unity.2D.Sprite.Editor.dll:
@@ -18,6 +25,9 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
     Unity.Timeline.Editor.dll:
     - TimelinePreferences
@@ -35,6 +45,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Slider
+    - UnityEngine.UI.Text
   serializedClasses:
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
@@ -64,6 +75,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
     - UnityEngine.UI.ColorBlock
+    - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.Slider/SliderEvent
@@ -76,8 +88,32 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: Assembly-CSharp
+    fullTypeName: Sleepinessscale
+    methodName: Plusloding
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: SceneGange
+    methodName: Scenes
+  - assembly: Assembly-CSharp
+    fullTypeName: HungeScore
+    methodName: Plusloding
+  - assembly: Assembly-CSharp
     fullTypeName: Task
     methodName: Plusloding
+  - assembly: Assembly-CSharp
+    fullTypeName: SceneGange
+    methodName: Scenes
+  - assembly: Assembly-CSharp
+    fullTypeName: HungeScore
+    methodName: Plusloding
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -100,12 +136,46 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: Assembly-CSharp
-    fullTypeName: Sleepinessscale
+    fullTypeName: HungeScore
     methodName: Plusloding
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   sceneClasses:
+    Assets/Scenes/Level 2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
     Assets/Scenes/SampleScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -132,39 +202,55 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1588}
     - Class: 114
-      Script: {instanceID: 2164}
+      Script: {instanceID: 2168}
     - Class: 114
-      Script: {instanceID: 2576}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 2774}
+      Script: {instanceID: 2788}
     - Class: 114
-      Script: {instanceID: 3054}
+      Script: {instanceID: 3070}
     - Class: 114
-      Script: {instanceID: 4026}
+      Script: {instanceID: 4048}
     - Class: 114
-      Script: {instanceID: 4272}
+      Script: {instanceID: 4130}
     - Class: 114
-      Script: {instanceID: 4888}
+      Script: {instanceID: 4298}
     - Class: 114
-      Script: {instanceID: 4958}
+      Script: {instanceID: 4874}
     - Class: 114
-      Script: {instanceID: 5150}
+      Script: {instanceID: 4928}
     - Class: 114
-      Script: {instanceID: 5338}
+      Script: {instanceID: 4998}
     - Class: 114
-      Script: {instanceID: 5502}
+      Script: {instanceID: 5154}
     - Class: 114
-      Script: {instanceID: 5554}
+      Script: {instanceID: 5194}
     - Class: 114
-      Script: {instanceID: 5650}
+      Script: {instanceID: 5248}
     - Class: 114
-      Script: {instanceID: 5960}
+      Script: {instanceID: 5382}
     - Class: 114
-      Script: {instanceID: 6844}
+      Script: {instanceID: 5548}
     - Class: 114
-      Script: {instanceID: 7088}
+      Script: {instanceID: 5602}
     - Class: 114
-      Script: {instanceID: 7170}
+      Script: {instanceID: 5700}
+    - Class: 114
+      Script: {instanceID: 5962}
+    - Class: 114
+      Script: {instanceID: 6020}
+    - Class: 114
+      Script: {instanceID: 6908}
+    - Class: 114
+      Script: {instanceID: 7156}
+    - Class: 114
+      Script: {instanceID: 7238}
+    - Class: 114
+      Script: {instanceID: 7256}
+    - Class: 114
+      Script: {instanceID: 7532}
+    - Class: 114
+      Script: {instanceID: 7808}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -568,6 +654,12 @@ ScriptsOnlyBuild:
     className: DictionaryAsset
   - hash:
       serializedVersion: 2
+      Hash: 24fbb4391de1df72404cd2544d0f27ad
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ExFarm
+  - hash:
+      serializedVersion: 2
       Hash: 6298a10412e94e11ad85ac6148c9dda1
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -652,6 +744,12 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerStayMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 6cc31885e57e38c235b13a770f135177
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: HungeScore
+  - hash:
+      serializedVersion: 2
       Hash: fa7c62595553866a25a1f687b1914fd2
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -706,6 +804,12 @@ ScriptsOnlyBuild:
     className: PanelEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 1e4826f6b918606cdffe13303a499756
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DragObjectHandler
+  - hash:
+      serializedVersion: 2
       Hash: 410533dc3a0a91689483d1df00a4d381
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -730,7 +834,7 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: dcadc4f9ec1bdc17ab122f31a28ed0b3
+      Hash: 348a91e73cfe18b424278919554e3156
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Score
@@ -748,7 +852,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: faf440a137505460b52b031d73cd1159
+      Hash: 62c5164ddac2c5717091247010d32513
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Task
@@ -776,6 +880,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 9f240a8c3bf9ee44a8800288d8a8391b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: FarmMoney
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -958,7 +1068,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: c13adf70ec9777b05527d1b32edc4c16
+      Hash: 04f0c6accdd4fbc6f472b2aee9a7288d
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: EcoTrigger
@@ -974,6 +1084,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnParticleCollisionMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SceneGange
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1004,6 +1120,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: ced16bec70782353845a96afec079884
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DragAndDrop
   - hash:
       serializedVersion: 2
       Hash: afe1800287c9574079eab3fea2622416
@@ -1040,7 +1162,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 8b21b01f6cb50fb8f98edad597eed825
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Slot
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/argentum/Builds/Diploma.exe
+  - Assets/Scenes/Level 2.unity
+  playerPath: D:/argentum/Builds/DefensDiploma/Diploma.exe
