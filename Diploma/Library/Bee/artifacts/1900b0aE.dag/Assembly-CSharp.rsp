@@ -366,6 +366,7 @@
 "Assets/Scrit/Sleepinessscale.cs"
 "Assets/Scrit/Slot.cs"
 "Assets/Scrit/Task.cs"
+"Assets/TaskChanger.cs"
 -langversion:9.0
 
 /deterministic
