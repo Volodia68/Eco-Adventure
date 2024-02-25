@@ -403,11 +403,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe8871d63af19a4293f1e82ba47a409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsByTask: 0.08
+  pointsByTask: 1
   menu: {fileID: 1260478672}
   UI: {fileID: 1295011173}
   exit: {fileID: 32491352}
-  ecoSlider: {fileID: 1957956657}
   dragable:
   - {fileID: 1944621783}
   - {fileID: 1136280652}
@@ -497,8 +496,9 @@ GameObject:
   m_Component:
   - component: {fileID: 65474556}
   - component: {fileID: 65474557}
+  - component: {fileID: 65474558}
   m_Layer: 5
-  m_Name: interactiv 1
+  m_Name: interactiv 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -577,6 +577,20 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &65474558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65474555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c377174268d92b44bbec0c7a0fe22760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactiv: {fileID: 1987277312}
+  sliderIndex: 0
 --- !u!1 &121190125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1222,8 +1236,6 @@ MonoBehaviour:
   ExpSlider: {fileID: 1091269229}
   GainExp: 0.00005
   lose: {fileID: 680244195}
-  Money: {fileID: 0}
-  GainMoney: 1
 --- !u!114 &261011838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2217,7 +2229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.02162838, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.019607844, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2625,8 +2637,7 @@ MonoBehaviour:
   text: {fileID: 494086448}
   menu: {fileID: 1260478672}
   exit: {fileID: 926599769}
-  pointsByTask: 0.04
-  ecoSlider: {fileID: 261011837}
+  pointsByTask: 1
   Money: {fileID: 2136588888}
   GainMoney: 1
   Ui: {fileID: 1295011173}
@@ -4758,7 +4769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.8772963, b: 0, a: 1}
+  m_Color: {r: 0.16470589, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5372,7 +5383,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1260478676}
         m_TargetAssemblyTypeName: TaskChanger, Assembly-CSharp
         m_MethodName: ChooseTask
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6493,8 +6504,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1190975217}
   - component: {fileID: 1190975218}
+  - component: {fileID: 1190975219}
   m_Layer: 5
-  m_Name: interactiv 2
+  m_Name: interactiv 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6573,6 +6585,20 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1190975219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190975216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c377174268d92b44bbec0c7a0fe22760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactiv: {fileID: 1987277312}
+  sliderIndex: 1
 --- !u!1 &1232534415
 GameObject:
   m_ObjectHideFlags: 0
@@ -7041,6 +7067,10 @@ MonoBehaviour:
   - {fileID: 2029640907}
   - {fileID: 32491352}
   - {fileID: 926599769}
+  ecoSliders:
+  - {fileID: 1703547134}
+  - {fileID: 1957956657}
+  - {fileID: 261011837}
   Map: {fileID: 1260478672}
   Garage: {fileID: 292304778}
   UI: {fileID: 1295011173}
@@ -7094,7 +7124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.8772963, b: 0, a: 1}
+  m_Color: {r: 0.16439462, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7136,7 +7166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1295011174
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7376,10 +7406,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.075
-  pointsByTask: 0.05
+  pointsByTask: 1
   menu: {fileID: 1260478672}
   exit: {fileID: 2029640907}
-  ecoSlider: {fileID: 1703547134}
   Ui: {fileID: 1295011173}
 --- !u!1 &1318890247
 GameObject:
@@ -7466,11 +7495,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1260478676}
         m_TargetAssemblyTypeName: TaskChanger, Assembly-CSharp
         m_MethodName: ChooseTask
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7749,7 +7778,7 @@ GameObject:
   - component: {fileID: 1335080417}
   - component: {fileID: 1335080418}
   m_Layer: 5
-  m_Name: Slider (3)
+  m_Name: Slider 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7815,7 +7844,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 396374983}
   m_HandleRect: {fileID: 0}
@@ -8294,7 +8323,7 @@ GameObject:
   - component: {fileID: 1463121428}
   - component: {fileID: 1463121429}
   m_Layer: 5
-  m_Name: Slider (6)
+  m_Name: Slider 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8360,7 +8389,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1593119418}
   m_HandleRect: {fileID: 0}
@@ -8665,7 +8694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.023529412, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.019607844, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8834,7 +8863,7 @@ RectTransform:
   m_Father: {fileID: 794481683}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8982,8 +9011,6 @@ MonoBehaviour:
   ExpSlider: {fileID: 1091269229}
   GainExp: 0.000005
   lose: {fileID: 680244195}
-  Money: {fileID: 0}
-  GainMoney: 0
 --- !u!1 &1705400230
 GameObject:
   m_ObjectHideFlags: 0
@@ -9411,11 +9438,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1260478676}
         m_TargetAssemblyTypeName: TaskChanger, Assembly-CSharp
         m_MethodName: ChooseTask
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9832,7 +9859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.023529412, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.018810749, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9982,7 +10009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.00965035, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.16470589, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10206,8 +10233,6 @@ MonoBehaviour:
   ExpSlider: {fileID: 1091269229}
   GainExp: 0.000005
   lose: {fileID: 680244195}
-  Money: {fileID: 0}
-  GainMoney: 1
 --- !u!1 &1962390919
 GameObject:
   m_ObjectHideFlags: 0
@@ -10241,7 +10266,7 @@ RectTransform:
   m_Father: {fileID: 1354108814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -10369,7 +10394,7 @@ GameObject:
   - component: {fileID: 1970477838}
   - component: {fileID: 1970477839}
   m_Layer: 5
-  m_Name: Slider (4)
+  m_Name: Slider 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10538,9 +10563,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1987277308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f47e2f3c6123a554eba57e505658a5b1, type: 3}
+  m_Script: {fileID: 11500000, guid: 178503359cedc97429659b82023d4caf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menu: {fileID: 1260478672}
+  exit: {fileID: 1987277308}
+  pointsByTask: 0.08
+  slidersBack:
+  - {fileID: 1970477839}
+  - {fileID: 1463121429}
+  - {fileID: 1335080418}
+  tolerance: 0.1
 --- !u!1 &1994661110
 GameObject:
   m_ObjectHideFlags: 0
@@ -10574,7 +10607,7 @@ RectTransform:
   m_Father: {fileID: 299382361}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -2.5, y: 0}
   m_SizeDelta: {x: 5.0001, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -10705,8 +10738,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2100523284}
   - component: {fileID: 2100523285}
+  - component: {fileID: 2100523286}
   m_Layer: 5
-  m_Name: interactiv
+  m_Name: interactiv 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10785,6 +10819,20 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2100523286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100523283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c377174268d92b44bbec0c7a0fe22760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactiv: {fileID: 1987277312}
+  sliderIndex: 2
 --- !u!1 &2100555341
 GameObject:
   m_ObjectHideFlags: 0

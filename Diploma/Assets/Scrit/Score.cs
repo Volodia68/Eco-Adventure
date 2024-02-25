@@ -12,7 +12,6 @@ public class Score : MonoBehaviour
     [SerializeField] GameObject menu;
     [SerializeField] GameObject exit;
     [SerializeField] float pointsByTask;
-    [SerializeField] EcoTrigger ecoSlider;
     [SerializeField] private FarmMoney Money;
     [SerializeField] int GainMoney;
     [SerializeField] GameObject Ui;
@@ -22,7 +21,7 @@ public class Score : MonoBehaviour
         text.text = Scorecount.ToString();
         if(Scorecount == 3 )
         {
-            ecoSlider.GetPowerEcoPoint(pointsByTask);
+            menu.GetComponent<TaskChanger>().AddPointsToSlider(pointsByTask);
             Ui.SetActive(true);
             menu.SetActive(true);
             exit.SetActive(false);

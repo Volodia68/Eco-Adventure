@@ -9,7 +9,6 @@ public class DragObjectHandler : MonoBehaviour
     [SerializeField] GameObject menu;
     [SerializeField] GameObject UI;
     [SerializeField] GameObject exit;
-    [SerializeField] EcoTrigger ecoSlider;
     [SerializeField] private DragAndDrop[] dragable;
 
     public void CheckDragOjects()
@@ -26,7 +25,7 @@ public class DragObjectHandler : MonoBehaviour
         if (Win == true)
         {
             //выключаем панель, выдаем очки и т.д.
-            ecoSlider.GetPowerEcoPoint(pointsByTask);
+            menu.GetComponent<TaskChanger>().AddPointsToSlider(pointsByTask);
             menu.SetActive(true);
             exit.SetActive(false);
             UI.SetActive(true);

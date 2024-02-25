@@ -14,8 +14,8 @@ public class EcoTrigger : MonoBehaviour
     [SerializeField] Slider ExpSlider;
     [SerializeField] float GainExp; 
     [SerializeField] GameObject lose;
-    [SerializeField] private FarmMoney Money;
-    [SerializeField] int GainMoney;
+    //[SerializeField] private FarmMoney Money;
+    //[SerializeField] int GainMoney;
 
 
     private Slider m_Slider;

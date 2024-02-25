@@ -5,14 +5,23 @@ using UnityEngine;
 public class TaskChanger : MonoBehaviour
 {
     [SerializeField] private GameObject[] Tasks;
+    [SerializeField] private EcoTrigger[] ecoSliders;
     [SerializeField] private GameObject Map, Garage, UI;
-    public void ChooseTask()
+
+    private int currentRegion;
+    public void ChooseTask(int regionIndex)
     {
         Map.SetActive(false);
         Garage.SetActive(false);
         UI.SetActive(false);
 
+        currentRegion = regionIndex;
+
         Tasks[Random.Range(0, Tasks.Length)].SetActive(true);
     }
 
+    public void AddPointsToSlider(float pointsByTask)
+    {
+        ecoSliders[currentRegion].GetPowerEcoPoint(pointsByTask);
+    }
 }

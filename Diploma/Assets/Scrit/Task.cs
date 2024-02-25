@@ -10,7 +10,6 @@ public class Task : MonoBehaviour
     [SerializeField] float pointsByTask;
     [SerializeField] GameObject menu;
     [SerializeField] GameObject exit;
-    [SerializeField] EcoTrigger ecoSlider;
     [SerializeField] GameObject Ui;
 
     private Slider m_Slider;
@@ -18,7 +17,7 @@ public class Task : MonoBehaviour
     {
         if (m_Slider.value == m_Slider.maxValue)
         {
-            ecoSlider.GetPowerEcoPoint(pointsByTask);
+            menu.GetComponent<TaskChanger>().AddPointsToSlider(pointsByTask);
             Ui.SetActive(true);
             menu.SetActive(true);
             exit.SetActive(false);
