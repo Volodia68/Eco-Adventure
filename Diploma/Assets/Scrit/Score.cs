@@ -12,8 +12,6 @@ public class Score : MonoBehaviour
     [SerializeField] GameObject menu;
     [SerializeField] GameObject exit;
     [SerializeField] float pointsByTask;
-    [SerializeField] private FarmMoney Money;
-    [SerializeField] int GainMoney;
     [SerializeField] GameObject Ui;
     public int Scorecount;
     private void Update()
@@ -25,7 +23,6 @@ public class Score : MonoBehaviour
             Ui.SetActive(true);
             menu.SetActive(true);
             exit.SetActive(false);
-            Money.AddMoney(GainMoney);
         }
     }
     private void OnEnable()
