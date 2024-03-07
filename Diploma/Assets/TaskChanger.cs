@@ -9,6 +9,7 @@ public class TaskChanger : MonoBehaviour
     [SerializeField] private GameObject Map, Garage, UI;
 
     private int currentRegion;
+
     public void ChooseTask(int regionIndex)
     {
         Map.SetActive(false);
@@ -17,7 +18,19 @@ public class TaskChanger : MonoBehaviour
 
         currentRegion = regionIndex;
 
-        Tasks[Random.Range(0, Tasks.Length)].SetActive(true);
+        
+        if( regionIndex == 2)
+        {
+            Tasks[Random.Range(0, Tasks.Length)].SetActive(true);
+        }
+        else if( regionIndex == 1) 
+        {
+            Tasks[Random.Range(0, Tasks.Length - 1)].SetActive(true);
+        }
+        else if (regionIndex == 0)
+        {
+            Tasks[Random.Range(0, Tasks.Length - 1)].SetActive(true);
+        }
     }
 
     public void AddPointsToSlider(float pointsByTask)

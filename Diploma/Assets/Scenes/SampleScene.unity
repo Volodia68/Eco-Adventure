@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 32491354}
   - component: {fileID: 32491356}
   m_Layer: 5
-  m_Name: Packaging
+  m_Name: PackagingTask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -446,7 +446,7 @@ RectTransform:
   m_Father: {fileID: 1705400231}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1531,7 +1531,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &292304779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4044,7 +4044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4963,7 +4963,7 @@ GameObject:
   - component: {fileID: 926599772}
   - component: {fileID: 926599771}
   m_Layer: 5
-  m_Name: SearchGarbage
+  m_Name: SearchGarbageTask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5532,7 +5532,7 @@ RectTransform:
   m_Father: {fileID: 663475197}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -2.5, y: 0}
   m_SizeDelta: {x: 5, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6871,7 +6871,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1260478673
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6956,6 +6956,7 @@ MonoBehaviour:
   - {fileID: 2029640907}
   - {fileID: 32491352}
   - {fileID: 926599769}
+  - {fileID: 1987277308}
   ecoSliders:
   - {fileID: 1703547134}
   - {fileID: 1957956657}
@@ -7905,7 +7906,7 @@ GameObject:
   - component: {fileID: 1374109190}
   - component: {fileID: 1374109189}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: poizon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9693,7 +9694,7 @@ RectTransform:
   m_Father: {fileID: 152898814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -2.5025024, y: 0}
   m_SizeDelta: {x: 5.005, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -10336,7 +10337,7 @@ GameObject:
   - component: {fileID: 1987277310}
   - component: {fileID: 1987277312}
   m_Layer: 5
-  m_Name: Customization
+  m_Name: CustomizationTask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
