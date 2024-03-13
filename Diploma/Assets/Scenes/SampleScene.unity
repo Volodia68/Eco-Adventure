@@ -209,6 +209,7 @@ GameObject:
   - component: {fileID: 27958115}
   - component: {fileID: 27958117}
   - component: {fileID: 27958116}
+  - component: {fileID: 27958118}
   m_Layer: 5
   m_Name: Test tube 0
   m_TagString: Untagged
@@ -273,6 +274,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 27958114}
   m_CullTransparentMesh: 1
+--- !u!114 &27958118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27958114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1315d2175aa8143832d214ed641257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {fileID: 27958116}
+  Bottle: {fileID: 1897063371}
+  NamingIvante: {fileID: 1374109191}
 --- !u!1 &28833909
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,7 +462,7 @@ RectTransform:
   m_Father: {fileID: 1705400231}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1151,7 +1167,7 @@ GameObject:
   - component: {fileID: 200433203}
   - component: {fileID: 200433202}
   m_Layer: 5
-  m_Name: 'Button '
+  m_Name: Button 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2212,6 +2228,7 @@ GameObject:
   - component: {fileID: 410713221}
   - component: {fileID: 410713223}
   - component: {fileID: 410713222}
+  - component: {fileID: 410713224}
   m_Layer: 5
   m_Name: Test tube 4
   m_TagString: Untagged
@@ -2276,6 +2293,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410713220}
   m_CullTransparentMesh: 1
+--- !u!114 &410713224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410713220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1315d2175aa8143832d214ed641257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {fileID: 410713222}
+  Bottle: {fileID: 1136236237}
+  NamingIvante: {fileID: 1374109191}
 --- !u!1 &428875319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2697,7 +2729,7 @@ GameObject:
   - component: {fileID: 502889467}
   - component: {fileID: 502889466}
   m_Layer: 5
-  m_Name: 'Button '
+  m_Name: Button 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4164,6 +4196,7 @@ GameObject:
   - component: {fileID: 810875630}
   - component: {fileID: 810875632}
   - component: {fileID: 810875631}
+  - component: {fileID: 810875633}
   m_Layer: 5
   m_Name: Test tube 3
   m_TagString: Untagged
@@ -4228,6 +4261,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810875629}
   m_CullTransparentMesh: 1
+--- !u!114 &810875633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810875629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1315d2175aa8143832d214ed641257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {fileID: 810875631}
+  Bottle: {fileID: 502889466}
+  NamingIvante: {fileID: 1374109191}
 --- !u!1 &816514521
 GameObject:
   m_ObjectHideFlags: 0
@@ -5544,7 +5592,7 @@ RectTransform:
   m_Father: {fileID: 663475197}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -2.5, y: 0}
   m_SizeDelta: {x: 5, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5700,6 +5748,7 @@ GameObject:
   - component: {fileID: 1098297652}
   - component: {fileID: 1098297654}
   - component: {fileID: 1098297653}
+  - component: {fileID: 1098297655}
   m_Layer: 5
   m_Name: Test tube 2
   m_TagString: Untagged
@@ -5764,6 +5813,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1098297651}
   m_CullTransparentMesh: 1
+--- !u!114 &1098297655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098297651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1315d2175aa8143832d214ed641257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {fileID: 1098297653}
+  Bottle: {fileID: 200433202}
+  NamingIvante: {fileID: 1374109191}
 --- !u!1 &1099593040
 GameObject:
   m_ObjectHideFlags: 0
@@ -6081,7 +6145,7 @@ GameObject:
   - component: {fileID: 1136236238}
   - component: {fileID: 1136236237}
   m_Layer: 5
-  m_Name: 'Button '
+  m_Name: Button 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6883,7 +6947,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1260478673
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6969,6 +7033,7 @@ MonoBehaviour:
   - {fileID: 32491352}
   - {fileID: 926599769}
   - {fileID: 1987277308}
+  - {fileID: 1374109187}
   ecoSliders:
   - {fileID: 1703547134}
   - {fileID: 1957956657}
@@ -7528,6 +7593,7 @@ GameObject:
   - component: {fileID: 1325121766}
   - component: {fileID: 1325121768}
   - component: {fileID: 1325121767}
+  - component: {fileID: 1325121769}
   m_Layer: 5
   m_Name: Test tube 1
   m_TagString: Untagged
@@ -7592,6 +7658,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325121765}
   m_CullTransparentMesh: 1
+--- !u!114 &1325121769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325121765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1315d2175aa8143832d214ed641257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {fileID: 1325121767}
+  Bottle: {fileID: 2123513120}
+  NamingIvante: {fileID: 1374109191}
 --- !u!1 &1326891122
 GameObject:
   m_ObjectHideFlags: 0
@@ -7924,7 +8005,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1374109188
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8006,9 +8087,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7397e91de40a42b44bb6458c0802c5e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bottle: []
+  menu: {fileID: 1260478672}
+  exit: {fileID: 1374109187}
+  pointsByTask: 1
   timeRemaining: 10
   timeText: {fileID: 1775077550}
+  bottle:
+  - {fileID: 27958118}
+  - {fileID: 1325121769}
+  - {fileID: 1098297655}
+  - {fileID: 810875633}
+  - {fileID: 410713224}
 --- !u!1 &1383186394
 GameObject:
   m_ObjectHideFlags: 0
@@ -8989,7 +9078,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 00:10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9016,8 +9105,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 39.82
+  m_fontSizeBase: 39.82
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9606,7 +9695,7 @@ GameObject:
   - component: {fileID: 1897063372}
   - component: {fileID: 1897063371}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9857,7 +9946,7 @@ RectTransform:
   m_Father: {fileID: 152898814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -2.5025024, y: 0}
   m_SizeDelta: {x: 5.005, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -10997,7 +11086,7 @@ GameObject:
   - component: {fileID: 2123513121}
   - component: {fileID: 2123513120}
   m_Layer: 5
-  m_Name: 'Button '
+  m_Name: Button 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
