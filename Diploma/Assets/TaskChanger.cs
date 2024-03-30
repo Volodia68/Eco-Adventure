@@ -18,7 +18,6 @@ public class TaskChanger : MonoBehaviour
 
         currentRegion = regionIndex;
 
-        
         if( regionIndex == 2)
         {
             Tasks[Random.Range(0, Tasks.Length)].SetActive(true);
@@ -32,7 +31,6 @@ public class TaskChanger : MonoBehaviour
             Tasks[Random.Range(0, Tasks.Length - 1)].SetActive(true);
         }
     }
-
     public void AddPointsToSlider(float pointsByTask)
     {
         ecoSliders[currentRegion].GetPowerEcoPoint(pointsByTask);
