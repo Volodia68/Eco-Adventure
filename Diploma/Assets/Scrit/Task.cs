@@ -23,13 +23,11 @@ public class Task : MonoBehaviour
             exit.SetActive(false);
         }
     }
-    
     void Awake()
     {
         m_Slider = GetComponent<Slider>();
         m_Slider.onValueChanged.AddListener(delegate { AddEcolog(); });
     }
-
     private void OnEnable()
     {
         m_Slider.value = 0;

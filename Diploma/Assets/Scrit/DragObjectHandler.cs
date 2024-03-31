@@ -16,7 +16,7 @@ public class DragObjectHandler : MonoBehaviour
         bool Win = true;
         for (int i = 0; i < dragable.Length; i++)
         {
-            if (dragable[i].Draggable == true) // если хотя бы один остается true, то есть еще не положен на место и его можно таскать, то не выиграли
+            if (dragable[i].Draggable == true) 
             {
                 Win = false;
             }
@@ -24,7 +24,7 @@ public class DragObjectHandler : MonoBehaviour
 
         if (Win == true)
         {
-            //выключаем панель, выдаем очки и т.д.
+            
             menu.GetComponent<TaskChanger>().AddPointsToSlider(pointsByTask);
             menu.SetActive(true);
             exit.SetActive(false);
@@ -39,7 +39,6 @@ public class DragObjectHandler : MonoBehaviour
             dragable[i].Draggable = true;
             dragable[i].GetComponent<Image>().raycastTarget = true;
             dragable[i].GetComponent<RectTransform>().anchoredPosition = dragable[i].firstPosition;
-            // здесь обновлять положения объектов при перезапуске панели
         }
     }
 }

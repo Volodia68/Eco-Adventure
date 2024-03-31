@@ -29,7 +29,7 @@ public class Interactiv : MonoBehaviour
 
     public void CheckSlider(int sliderIndex, Slider currentSlider)
     {
-        //Debug.Log("Slider" + sliderIndex + " value: " + currentSlider.value);
+        
 
         slidersValue[sliderIndex] = currentSlider.value;
 
@@ -50,6 +50,5 @@ public class Interactiv : MonoBehaviour
             menu.SetActive(true);
             exit.SetActive(false);
         }
-        Debug.Log(win);
     }
 }
