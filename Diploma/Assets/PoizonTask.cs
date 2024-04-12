@@ -20,10 +20,20 @@ public class PoizonTask : MonoBehaviour
 
     public void StartTimer()
     {
-        
+        timeRemaining = 10;
         timerIsRunning = true;
     }
-    
+    private void OnEnable()
+    {
+        timeText.text = "00:10";
+        t = 2;
+        foreach (var item in bottle)
+        {
+            item.GetComponent<Image>().color = UnityEngine.Color.blue;
+            item.Bottle.interactable = true;
+
+        }
+    }
     public void Cheking(UnityEngine.Color color)
     {
         
@@ -77,4 +87,5 @@ public class PoizonTask : MonoBehaviour
 
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+
 }
