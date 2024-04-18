@@ -12,7 +12,6 @@ public class CheckColor : MonoBehaviour
     {
         Bottle.onClick.AddListener(Cheking);
         Bottle.onClick.AddListener(() => NamingIvante.Cheking(color.color));
-
     }
 
     private void Cheking()

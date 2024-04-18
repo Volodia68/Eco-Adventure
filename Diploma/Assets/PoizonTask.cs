@@ -11,6 +11,7 @@ public class PoizonTask : MonoBehaviour
     [SerializeField] GameObject menu;
     [SerializeField] GameObject exit;
     [SerializeField] float pointsByTask;
+    [SerializeField] GameObject Ui;
     public float timeRemaining = 10;
     private bool timerIsRunning = false;
     [SerializeField] private TextMeshProUGUI timeText;
@@ -46,6 +47,7 @@ public class PoizonTask : MonoBehaviour
             menu.GetComponent<TaskChanger>().AddPointsToSlider(pointsByTask);
             menu.SetActive(true);
             exit.SetActive(false);
+            Ui.SetActive(true);
         }
 
     }

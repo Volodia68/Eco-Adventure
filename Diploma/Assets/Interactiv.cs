@@ -12,6 +12,7 @@ public class Interactiv : MonoBehaviour
     [SerializeField] float pointsByTask;
     [SerializeField] Slider[] slidersBack;
     [SerializeField] float tolerance;
+    [SerializeField] GameObject Ui;
 
     private float[] slidersValue;
 
@@ -49,6 +50,7 @@ public class Interactiv : MonoBehaviour
             menu.GetComponent<TaskChanger>().AddPointsToSlider(pointsByTask);
             menu.SetActive(true);
             exit.SetActive(false);
+            Ui.SetActive(true);
         }
     }
 }
