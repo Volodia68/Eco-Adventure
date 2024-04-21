@@ -12,8 +12,8 @@ public class EcoTrigger : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] Slider ExpSlider;
-    [SerializeField] float GainExp; 
-    [SerializeField] GameObject lose;
+    [SerializeField] float GainExp;
+    public Ui ui;
     private Slider m_Slider;
     void Start()
     {
@@ -30,8 +30,8 @@ public class EcoTrigger : MonoBehaviour
        }
        else if (m_Slider.value == 0)
        {
-            lose.SetActive(true);
-       }
+            ui.ShowLosePanel();
+        }
     }
     public void GetPowerEcoPoint(float value)
     {

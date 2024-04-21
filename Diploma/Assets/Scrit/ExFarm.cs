@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class ExFarm : MonoBehaviour
 {
 
-    [SerializeField] GameObject WinSwitchScene;
+    public Ui ui;
 
     private Slider m_Slider;
     void Start()
@@ -20,7 +20,8 @@ public class ExFarm : MonoBehaviour
     {
         if (m_Slider.value == 1)
         {
-            WinSwitchScene.SetActive(true);
+            ui.ShowWinPanel();
+
         }
     }
 }
