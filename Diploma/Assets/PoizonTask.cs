@@ -12,7 +12,7 @@ public class PoizonTask : MonoBehaviour
     [SerializeField] GameObject exit;
     [SerializeField] float pointsByTask;
     [SerializeField] GameObject Ui;
-    public float timeRemaining = 10;
+    public float timeRemaining = 5;
     private bool timerIsRunning = false;
     [SerializeField] private TextMeshProUGUI timeText;
     public List<CheckColor> bottle;
@@ -21,12 +21,12 @@ public class PoizonTask : MonoBehaviour
 
     public void StartTimer()
     {
-        timeRemaining = 10;
+        timeRemaining = 5;
         timerIsRunning = true;
     }
     private void OnEnable()
     {
-        timeText.text = "00:10";
+        timeText.text = "00:05";
         t = 2;
         foreach (var item in bottle)
         {
